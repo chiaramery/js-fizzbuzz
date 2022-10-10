@@ -9,7 +9,7 @@ const row = document.querySelector(".row");
 
 
 // 1 scrivere in console tutti i numeri da 0 a 100
-for (let i = 0; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     //   - SE numero divisibile per 3 && numero divisibile per 5, stampo FizzBuzz
     //   - ALTRIMENTI SE numero divisibile per 3, stampo Fizz
     //   - ALTRIMENTI SE numero divisibile per 5, stampo Buzz
@@ -17,21 +17,22 @@ for (let i = 0; i <= 100; i++) {
     let multi = "";
 
     if( i % 3 === 0 && i % 5 === 0) {
-        multi = `FizzBuzz`;
+        multi = `fizzbuzz`;
         console.log(multi);
     } else if ( i % 3 === 0){ 
-    multi = `Fizz`; 
+    multi = `fizz`; 
     console.log(multi);
     } else if ( i % 5 === 0){ 
-        multi = `Buzz`; 
+        multi = `buzz`; 
         console.log(multi);
     } else {
         multi = `${i}`;
     }
 
-
-    const cell = `<div class="cell"> ${multi}</div>`;
+    // BONUS 1: Crea un container nel DOM , aggiungendo (attraverso la funzione `append()`) un elemento html con il numero o la stringa corretta da mostrare.
+    const cell = `<div class="cell ${multi}">${multi}</div>`;
     row.innerHTML += cell;
+
 }
 
 

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgb(13 60 76);
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: calc((100% / 7) - 1em);
+    height: 100px;
+    background-color: rgb(46 140 176);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5em;
+}
+
+.fizz {
+    background-color:rgb(65 214 163);
+}
+
+.buzz {
+    background-color: rgb(251 205 113);
+}
+
+.fizzbuzz {
+    background-color: rgb(232 66 113);
+}
